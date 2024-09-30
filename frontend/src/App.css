@@ -1,0 +1,11 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.content:hover {
+  background-color: rgba(0, 0, 0, .7);
+  cursor: pointer;
+  transition: .5s;
+  color: white;
+  border-color: rgb(164, 215, 98) !important;
+}
