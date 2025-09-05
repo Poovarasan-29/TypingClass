@@ -10,7 +10,14 @@ export default function CustomPara({ setContents, setCustomPara }) {
   }
 
   function handleAddPara() {
-    setContents(pre => [...pre, para.trim()]);
+    if (para.trim().length != 0) {
+      setContents(pre => [...pre, para.trim()]);
+      setPara("")
+      setCustomPara(false)
+    }
+  }
+
+  function handleClosePara() {
     setPara("")
     setCustomPara(false)
   }
@@ -31,10 +38,10 @@ export default function CustomPara({ setContents, setCustomPara }) {
           title={"The content will be removed once the page is refreshed"}
         ></textarea>
       </div>
-      {
-        para.length != 0 &&
+      <div className="df-flex ms-auto">
         <button className="btn btn-success" onClick={handleAddPara}>ADD</button>
-      }
+        <button className="btn btn-danger ms-3" onClick={handleClosePara}>CLOSE</button>
+      </div>
     </>
   );
 }
