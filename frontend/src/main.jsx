@@ -1,12 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import { Timer } from './Timer.jsx'
-// import './index.css'
+import KeyboardGuard from './components/KeyboardGuard.jsx'
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
-  <App />
+  <KeyboardGuard>
+    <App />
+  </KeyboardGuard>
   // <Timer />
   // </StrictMode>,
 )
