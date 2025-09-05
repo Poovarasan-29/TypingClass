@@ -43,7 +43,8 @@ function KeyboardGuard({ children }) {
     return (
       <div className="flex flex-col items-center justify-center h-screen text-center">
         <h1 className="text-2xl font-bold">Keyboard Required 🚫</h1>
-        <p className="mt-2">Please open this typing test on a system with a physical keyboard.</p>
+        <p className="mt-2">Please open this typing test on laptop.</p>
+        <p className="mt-2">If you are in laptop just click any key.</p>
       </div>
     );
   }

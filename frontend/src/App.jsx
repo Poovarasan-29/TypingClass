@@ -261,7 +261,7 @@ function App() {
           ))}
 
           {customPara ? (
-            <CustomPara />
+            <CustomPara setContents={setContents} setCustomPara={setCustomPara}/>
           ) : (
             <button
               className="btn btn-primary"
